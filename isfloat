@@ -1,0 +1,12 @@
+def isfloat(num: any) -> bool:
+    try:
+        float(num)
+        return True
+    except ValueError:
+        return False
+
+print(isfloat('12x'))
+print(isfloat(2.3))
+print(isfloat("x23"))
+print(isfloat("5.4"))
+print(isfloat(5.4))
